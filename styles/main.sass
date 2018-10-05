@@ -1,0 +1,55 @@
+// main stylesheet
+
+//IMPORTS
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre')
+//@import node_modules\bourbon
+
+// VARIABLES
+$black: #333
+$pale: #d2e1dd
+$pink: #c69 
+$blue: #036 
+
+$font-stack: 'Proza Libre', sans-serif, 'Cormorant Garamond', serif
+$font-size: 14px
+
+// MIXINS
+
+ =circleThing($rad, $height, $width, $bg, $color)
+    -webkit-border-radius: $rad
+    -moz-border-radius: $rad
+    -ms-border-radius: $rad
+    border-radius: $rad
+
+    height:  $height
+    width:  $width
+
+    line-heught: $height
+    text-align: center
+
+    background: $bg
+    color: $color
+
+    margin: 0 auto
+
+
+//STYLES
+
+body
+  background: $pale
+  color: $black
+  font-family: $font-stack
+  font-size: $font-size
+
+article
+  background: white
+  width: 760px
+  margin: 0 auto
+  padding: 40px
+  box-sizing: border-box
+
+header
+// @include circleThing(100%, 200px, 200px, $blue, white) error
+
+    h1 
+      font-size: $font-size + 2
