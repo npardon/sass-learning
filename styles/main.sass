@@ -2,38 +2,39 @@
 
 //IMPORTS
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre')
-//@import node_modules\bourbon
 
 // VARIABLES
-$black: #333
-$pale: #d2e1dd
-$pink: #c69 
-$blue: #036 
 
-$font-stack: 'Proza Libre', sans-serif, 'Cormorant Garamond', serif
-$font-size: 14px
+$black:   #333
+$pale:    #d2e1dd
+$pink:    #c69
+$blue:    #036
+
+$font-stack: 'Cormorant Garamond', serif, 'Proza Libre', sans-serif 
+$font-size:   16px
+
 
 // MIXINS
 
-  =circleThing($rad, $height, $width, $bg, $color)
-    -webkit-border-radius: $rad
-    -moz-border-radius: $rad
-    -ms-border-radius: $rad
-    border-radius: $rad
+=circleThing($rad, $height, $width, $bg, $color)
+  -webkit-border-radius:  $rad
+  -moz-border-radius:     $rad
+  -ms-border-radius:      $rad
+  border-radius:          $rad
 
-    height:  $height
-    width:  $width
+  height: $height
+  width:  $width
 
-    line-heught: $height
-    text-align: center
+  line-height: $height
+  text-align: center
 
-    background: $bg
-    color: $color
+  background: $bg
+  color:      $color
 
-    margin: 0 auto
+  margin: 0 auto
 
 
-//STYLES
+// STYLES
 
 body
   background: $pale
@@ -41,16 +42,32 @@ body
   font-family: $font-stack
   font-size: $font-size
 
+
 article
   background: white
   width: 760px
-  margin: 0 auto
+  margin: -60px auto 0
   padding: 40px
   box-sizing: border-box
+  position: relative
+  z-index: -2
+
 
 header
-/* Need to figure out why this is not showing up 
-// @include circleThing(100%, 200px, 200px, $blue, white) error */
+  +circleThing(100%, 200px, 200px, $blue, white)
 
-    h1 
-      font-size: $font-size + 2
+  h1
+    font-size: $font-size + 2
+  
+  h2 
+    font-family: 'Cormorant Garmond', serif
+
+footer
+  +circleThing(100%, 150px, 150px, $black, $pale)
+  font-size: $font-size -3
+  position: relative
+  z-index: -4
+  margin-top: -60px
+
+
+

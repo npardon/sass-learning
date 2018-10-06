@@ -3,3 +3,5 @@ node_modules
 package-lock.json
 styles/main.css
 styles/main.css.map
+example.sass
+example.css
