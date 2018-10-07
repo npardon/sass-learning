@@ -1,4 +1,4 @@
-/ 1st page  /
+# 1st page  
 .sass-cache
 node_modules
 package-lock.json
@@ -7,5 +7,6 @@ styles/main.css.map
 example.sass
 example.css
 
-/folder-structure portion /
+#folder-structure portion 
 1st-page
+
