@@ -1,6 +1,11 @@
-@import: "0-plugins\plugins-dir";
-@import: "1-base\base-dir";
-@import: "2-layouts\layouts-dir";
-@import: "3-modules\modules-dir";
+body {
+  background: #dce3ef; }
+  body h1 {
+    font-family: "Lucida Handwriting";
+    color: #529628; }
+  body p {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px; }
 
 /*# sourceMappingURL=app.css.map */
