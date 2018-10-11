@@ -1,6 +1,15 @@
+//Variables
+$baseColor: yellow
 
 .box 
   height:   100px
   width:    100px
+  background:   $baseColor
   display: inline-block
-  +box()
+  +box( 100%, #555, orange, yellow)
+
+#box2 
+  +box(50%, #000, #639, #fc3)
+
+#box3 
+  +box(5px,  #ddd, black, teal)
