@@ -1,15 +1,15 @@
 //Global Mixin
-=box()
-  -webkit-border-radius:    100%
-  -moz-border-radius:   100%
-  border-radius:    100%
+=box($radius, $shadowColor, $grad1, $grad2 )
+  -webkit-border-radius:    $radius 
+  -moz-border-radius:   $radius 
+  border-radius:    $radius 
 
-  -webkit-box-shadow:   0 5px 10px #555 
-  -moz-box-shadow:    0 5px 10px #555
-  box-shadow:   0 5px 10px #555
+  -webkit-box-shadow:   0 5px 10px $shadowColor 
+  -moz-box-shadow:    0 5px 10px $shadowColor 
+  box-shadow:   0 5px 10px $shadowColor 
 
   background:   $base-color
-  background-image:  -webkit-linear-gradient(to right top, #ddccee, #ffb9de, #ffb09a, #ffc741, #a8eb12)
-  background-image:  -o-linear-gradient(to right top, #ddccee, #ffb9de, #ffb09a, #ffc741, #a8eb12)
-  background-image:  -moz-linear-gradient(to right top, #ddccee, #ffb9de, #ffb09a, #ffc741, #a8eb12)
-  background-image:  linear-gradient(to right top, #ddccee, #ffb9de, #ffb09a, #ffc741, #a8eb12)
+  background:  -webkit-linear-gradient( $grad1, $grad2)
+  background:  -o-linear-gradient($grad1, $grad2)
+  background:  -moz-linear-gradient($grad1, $grad2) 
+  background:  linear-gradient( $grad1, $grad2)
