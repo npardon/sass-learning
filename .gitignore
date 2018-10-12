@@ -1,0 +1,16 @@
+# 1st page  
+.sass-cache
+node_modules
+package-lock.json
+styles/main.css
+styles/main.css.map
+example.sass
+example.css
+
+#folder-structure portion 
+1st-page
+css/app.css.map
+css/app.min.css
+
+
+
