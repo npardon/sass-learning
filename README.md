@@ -5,4 +5,4 @@
 
  __Dependency: bourbon__
  Bourbon version 4.2.7
-  ##The Final product does not look the same as the one in the lesson because this seris is over two years old.  Many things have changed in sass. It was help full to get the basics down.
+  ##The Final product does not look the same as the one in the lesson because this seris is over two years old.  Many things have changed in sass. It was help full to get the basics down.##
